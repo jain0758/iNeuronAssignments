@@ -1,0 +1,145 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+-> It can be used to create variety of diff programs and is not specialized for any specifc problem. Hence called general purpose language. 
+
+Q2. Why is Python called a dynamically typed language?
+-> Unlike C/C++/Java where it is mandatory ot declare and provide type of variable before is assigned any value, Python does not have any problem even if you dont declare the type of variable. Here type of variable is determined at run time depending on what is stored into allocated bind memory location to the variable. We can say declaring a variable is of no use in Python.
+
+Q3. List some pros and cons of Python programming language?
+-> PROS : 
+    - Beginner friendliness, 
+    - Versatile, 
+    - Open source, 
+    - Large and active community support
+   CONS : 
+    - Slow Speed (since it is interpreted and dynamically types), 
+    - Inefficient memory use(this comes due to providing simplicity to programmers). It consumes lot of memory 
+
+Q4. In what all domains can we use Python?
+-> Website development/softwares, task automation, data analysis, machine learning, Everyday tasks
+
+Q5. What are variable and how can we declare them?
+-> variable are the names given to memory location. By these we can access the value held at that memomy location.
+
+Q6. How can we take an input from the user in Python?
+-> input() function
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+-> str
+
+Q8. What is type casting?
+-> converting data from one type to another
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+
+
+Q10. What are keywords?
+-> these are reserved words by programming language used while giving instruction via program
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+-> No. This is because how will interpreter distinguish between keyword and variables
+
+Q12. What is indentation? What's the use of indentaion in Python?
+-> In Python world Indentation is used to specify blocks with in the code. This allows python to separate one logical block of code with another
+
+Q13. How can we throw some output in Python?
+-> print() function
+
+Q14. What are operators in Python?
+-> Numerical operators, Assignment operators, Comparison Operators, Logical Operators
+
+Q15. What is difference between / and // operators?
+-> / is used for float division and // is used for integer division
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+str_ineuron = "iNeuron"
+for num in range(1,4):
+    str_ineuron = str_ineuron + "iNeuron"
+print(str_ineuron)
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+
+int_num = int(input("Enter the number : "))
+if (int_num % 2 == 0):
+    print("Number is even")
+else:
+    print("Number is odd")
+
+Q18. What are boolean operator?
+-> Comparison operatos are boolean operators
+
+Q19. What will the output of the following?
+```
+1 or 0 
+-> 1
+
+0 and 0
+-> 0
+
+True and False and True
+-> false
+
+1 or 0 or 0
+-> 1
+
+Q20. What are conditional statements in Python?
+-> statement that evaluates a condition and emits result as TRUE or FALSE
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+-> these are conditional statements used to evaluates conditions
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+int_age = int(input("Enter the age : "))
+if(int_age >= 18):
+    print("I can vote")
+else:
+    print("I can't vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+
+numbers = [12, 75, 150, 180, 145, 525, 50]
+sum_of_even_nums = 0
+for num in numbers:
+    if(num % 2 == 0):
+        sum_of_even_nums = sum_of_even_nums + num
+print("Sum of even numbers = ",sum_of_even_nums)
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+
+first_num = int(input("Enter first number = "))
+second_num = int(input("Enter second number = "))
+third_num = int(input("Enter third number = "))
+if(first_num > second_num):
+    if(first_num > third_num):
+        print("First number is greatest = ",first_num)
+    else:
+        print("Third number is greatest = ",third_num)   
+elif(second_num > third_num):
+    print("Second number is greatest = ",second_num)
+else:
+    print("Third number is greatest = ",third_num)
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+for i in numbers:
+    if(i % 5 == 5 or i % 5 == 0):
+        if(i < 150):
+            if(i < 500):
+                print(i)
+            else:
+                break   
+        else:
+            continue
